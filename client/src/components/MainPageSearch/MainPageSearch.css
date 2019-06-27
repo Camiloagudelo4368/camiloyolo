@@ -1,0 +1,37 @@
+body{
+    height: 100%;
+}
+#bannerImg {
+    width:100%;
+}
+#banner {
+    margin: 20px;
+}
+#mainPageArea1 {
+    border: 1px solid gray;
+    height: 800px;
+    padding: 20px;
+    background-color: #FFF7D6;
+}
+
+#mainPageArea2 {
+    border: 1px solid gray;
+    height: 800px;
+    padding: 20px;
+    background-color: #E3E5A0;
+}
+
+#mainPageArea3 {
+    border: 1px solid gray;
+    height: 800px;
+    padding: 20px;
+    background-color: #EEF7BC;
+}
+#mainPageTitle {
+    text-align: center;
+}
+
+#mainPageSubtitle {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
