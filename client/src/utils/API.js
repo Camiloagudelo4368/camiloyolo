@@ -86,10 +86,10 @@ export default {
         console.log("look at this", url)
 
         const config = {
-            headers: { "Access-Control-Allow-Origin": "*" },
+            // headers: { "Access-Control-Allow-Origin": "*" },
             url: url,
             method: 'GET',
-            crossorigin: true   ,
+            // crossorigin: true,
             // contentType: 'application/json',
             // crossDomain: true,
         }
