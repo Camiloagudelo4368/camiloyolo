@@ -1,17 +1,25 @@
 import React from 'react';
 import axios from "axios";
+import { Route, Redirect, Switch, withRouter } from "react-router-dom";
+import Client from "../../../pages/Client";
 
 class RegisterModal extends React.Component {
-    state = {
-        lastName: "",
-        firstName: "",
-        email: "",
-        password: "",
-        age: "",
-        heightFeet: "",
-        heightInches: "",
-        weight: ""
+    constructor(props) {
+        super(props);
+        this.state = {
+            lastName: "",
+            firstName: "",
+            email: "",
+            password: "",
+            age: "",
+            heightFeet: "",
+            heightInches: "",
+            weight: "",
+            redirect: false,
+            showModal: true,
+        }
     }
+
 
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -20,12 +28,15 @@ class RegisterModal extends React.Component {
         }, () => console.log(this.state))
     }
 
-    registerUser = () => {
+    registerUser = (event) => {
         const signUpInfo = this.state
-        axios.post("/auth/signup", signUpInfo)
+        axios.post("/auth", signUpInfo).then(res => {
+            window.location = "/mypage"
+        })
     }
 
     render() {
+
         return (
             <div className="modal fade" role="dialog" id="registerModal">
                 <div className="modal-dialog">
@@ -71,13 +82,14 @@ class RegisterModal extends React.Component {
                                     <option value="f">Female</option>
                                 </select>
                             </div>
+
+
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
                                     <span className="input-group-text" id="inputGroup-sizing-default">Height</span>
                                 </div>
                                 <input type="text" className="form-control" aria-label="HeightF" aria-describedby="inputGroup-sizing-default" placeholder="Feet" name="heightFeet" onChange={this.handleInputChange} />
                                 <input type="text" className="form-control" aria-label="HeightI" aria-describedby="inputGroup-sizing-default" placeholder="Inches" name="heightInches" onChange={this.handleInputChange} />
-
                             </div>
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
@@ -91,11 +103,11 @@ class RegisterModal extends React.Component {
                             <button onClick={this.registerUser} className="btn btn-sucess">Create an Account</button>
                         </div>
                     </div>
+
                 </div>
             </div>
-
         )
     }
 }
 
-export default RegisterModal;
+export default withRouter(RegisterModal);
