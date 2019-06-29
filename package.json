@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Camiloagudelo4368/camiloyolo.git"
+    "url": "git+https://github.com/Alainrj/YOLO.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Camiloagudelo4368/camiloyolo/issues"
+    "url": "https://github.com/Alainrj/YOLO/issues"
   },
-  "homepage": "https://github.com/Camiloagudelo4368/camiloyolo#readme",
+  "homepage": "https://github.com/Alainrj/YOLO#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-jwt": "^5.3.1",

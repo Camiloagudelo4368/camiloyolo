@@ -12,7 +12,7 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <div >
+      <div>
 
         <Nav />
         <div className="appBody">
