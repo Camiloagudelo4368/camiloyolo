@@ -13,8 +13,6 @@ function App() {
   return (
     <Router>
       <div>
-
-        <Nav />
         <div className="appBody">
           <Switch>
             <Route exact path="/" component={Home} />
