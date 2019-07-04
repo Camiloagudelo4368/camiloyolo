@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Client from "./pages/Client";
@@ -10,8 +10,16 @@ import Nav from './components/Nav'
 import './App.css'
 
 function App() {
+
+
+  const history = {
+    basename: process.env.PUBLIC_URL,
+  };
   return (
-    <Router>
+    // <Router basename='/'>
+    // <HashRouter history={history}>
+    <Router history={history}>
+      {/* <HashRouter> */}
       <div>
         <div className="appBody">
           <Switch>
@@ -24,6 +32,7 @@ function App() {
         </div>
         <Footer />
       </div>
+    {/* </HashRouter> */}
     </Router>
   );
 }
