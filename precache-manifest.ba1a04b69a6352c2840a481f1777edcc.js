@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/camiloyolo/static/js/runtime~main.c52c862b.js"
   },
   {
-    "revision": "850665180666c63d36d0",
-    "url": "/camiloyolo/static/js/main.473ae869.chunk.js"
+    "revision": "db7ac9f3558405363b16",
+    "url": "/camiloyolo/static/js/main.06c6e2c9.chunk.js"
   },
   {
     "revision": "d573435bdc5baa9218b0",
     "url": "/camiloyolo/static/js/2.5b0a2b8e.chunk.js"
   },
   {
-    "revision": "850665180666c63d36d0",
+    "revision": "db7ac9f3558405363b16",
     "url": "/camiloyolo/static/css/main.75baf46e.chunk.css"
   },
   {
-    "revision": "edf555175879e2d36c2352d6021c2843",
+    "revision": "3c944bc22ebcce463068d390f9ada70c",
     "url": "/camiloyolo/index.html"
   }
 ];
