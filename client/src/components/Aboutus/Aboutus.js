@@ -1,7 +1,7 @@
-import React from "react";
-import "./Aboutus.css";
+import React from 'react';
+import "./aboutus.css";
 
-function Aboutus() {
+function AboutUs() {
     return (
         <div className="container" id="aboutContainerBody">
             <div className="row" id="aboutContainer">
@@ -17,4 +17,4 @@ function Aboutus() {
     );
 }
 
-export default Aboutus;
+export default AboutUs;

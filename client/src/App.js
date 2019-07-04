@@ -4,22 +4,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Client from "./pages/Client";
 import Search from "./pages/Search";
-// import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Nav from './components/Nav'
 import './App.css'
 
-function App() {
-
-
-  const history = {
-    basename: process.env.PUBLIC_URL,
-  };
+function App() {  
   return (
-    // <Router basename='/'>
-    // <HashRouter history={history}>
-    <Router history={history}>
-      {/* <HashRouter> */}
       <div>
         <div className="appBody">
           <Switch>
@@ -32,8 +21,6 @@ function App() {
         </div>
         <Footer />
       </div>
-    {/* </HashRouter> */}
-    </Router>
   );
 }
 
