@@ -1,6 +1,6 @@
 {
   "name": "mern",
-  "homepage": "https://camiloagudelo4368.github.io/camiloyolo",  
+  "homepage": "https://camiloagudelo4368.github.io/camiloyolo",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
