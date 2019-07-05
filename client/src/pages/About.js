@@ -11,7 +11,7 @@ class About extends Component {
       <div>
         <AboutNav />
         <Container>
-          <AboutUs />
+          <AboutUs></AboutUs>
         </Container>
       </div>
 
