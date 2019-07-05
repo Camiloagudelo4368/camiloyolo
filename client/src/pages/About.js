@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
-import AboutUs from "../components/AboutUs"
+// import AboutUs from "../components/AboutUs"
 import AboutNav from "../components/AboutNav"
 // import API from "../utils/API";
 
@@ -11,7 +11,7 @@ class About extends Component {
       <div>
         <AboutNav />
         <Container>
-          <AboutUs></AboutUs>
+          {/* <AboutUs></AboutUs> */}
         </Container>
       </div>
 
