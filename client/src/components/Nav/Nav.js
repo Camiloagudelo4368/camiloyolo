@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import LoginModal from "./components/LoginModal"
 import RegisterModal from "./components/RegisterModal"
 import { detect } from 'detect-browser';
@@ -25,7 +25,9 @@ function Nav() {
                             <a class="nav-link" href="/"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
+                            <Link to={'/about'}>
+                            <a class="nav-link" >About</a>
+                            </Link>
                         </li>
                         {/* <li class="nav-item">
                             <a id="nav-link" class="nav-link" href="/mypage">My Page </a>
