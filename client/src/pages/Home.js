@@ -13,12 +13,12 @@ class Home extends Component {
 
   render() {
     return (
-     <>
+     <div>
      <Nav></Nav>
       <Container>
         <MainPageSearch></MainPageSearch>
       </Container>
-     </> 
+     </div> 
     );
   }
 }
