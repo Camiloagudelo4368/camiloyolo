@@ -26,8 +26,8 @@ class DailyCaloriesCal extends React.Component {
 
     componentDidMount() {
         // console.log('userBefore',user)
-        // axios.get("/current").then(user => {
-        axios.get("/test-route").then(user => {
+        axios.get("auth/current").then(user => {
+        // fetch("/auth/current").then(user => {
             console.log('user', user)
         })
     }

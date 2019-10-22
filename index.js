@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Add routes, both API and view
-// app.use(routes);
+app.use(routes);
 
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{

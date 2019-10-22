@@ -44,7 +44,7 @@ class MainPageSearch extends React.Component {
                 if (result.data.branded.length > 0) {
                     const list = []
 
-                    for (let i = 0; i < 7; i++) {
+                    for (let i = 0; i < 3; i++) {
                         const element = result.data.branded[i]
 
                         // console.log(element);

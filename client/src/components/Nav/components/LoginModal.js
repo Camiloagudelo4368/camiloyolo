@@ -37,7 +37,7 @@ render(){
                                 <input type="text" name="username" className="form-control" placeholder="Username" name="email" onChange={this.handleLoginChange} />
                             </div>
                             <div className="form-group">
-                                <input type="passsword" name="password" className="form-control" placeholder="Password" name="password" onChange={this.handleLoginChange} />
+                                <input type="password" name="password" className="form-control" placeholder="Password" name="password" onChange={this.handleLoginChange} />
                             </div>
                         </div>
 

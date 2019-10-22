@@ -29,10 +29,11 @@ class RegisterModal extends React.Component {
     }
 
     registerUser = (event) => {
-        const signUpInfo = this.state
-        // axios.post("/auth", signUpInfo).then(res => {
+        // const signUpInfo = this.state
+        // axios.post("/auth/signup", signUpInfo).then(res => {
         // axios.get("/auth/test-route/", signUpInfo).then(res => {
             // console.log(res)
+            // fetch("/mypage")
             window.location = "/mypage"
         // })
     }
